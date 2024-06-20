@@ -4,16 +4,39 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-button[data-start] {
-    background-color: #4E75FF;
-    color: #fff;
+/*button[data-start] {
+   background-color: #4E75FF;
+     color: #fff;
     cursor: pointer;
+}*/
+button[data-start] {
+    width: 75px;
+    height: 44px;
+    padding: 8px 16px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    /*color: #989898;*/
+    border-radius: 8px;
+    border: none;
 }
 button[disabled] {
     pointer-events: none;
     cursor: not-allowed;
     background-color: #CFCFCF;
     color: #989898;
+}
+
+button[data-start]:hover {
+    background-color: #6c8cff;
+    
+}
+
+
+
+/*button[data-start] {
+    background-color: #4E75FF;
+    color: #fff;
+    cursor: pointer;
 }
 
 button[data-start]:hover {
@@ -30,7 +53,7 @@ button[data-start] {
     background-color: #CFCFCF;
     border-radius: 8px;
     border: none;
-}
+}*/
 
 
 
@@ -47,10 +70,13 @@ button[data-start] {
 .flatpickr-input:hover,
 .flatpickr-input:focus {
     border: 1px solid #000;
+
 }
 
 .flatpickr-input.active {
-    border-color: #4E75FF;
+    /*border-color: #4E75FF;*/
+    outline: none;
+        border: 1px solid #4e75ff;
 }
 
 
